@@ -50,6 +50,23 @@ pre code {
   }
 }
 
+.content h1 {
+  display: none;
+}
+
+.logo {
+  text-align: center;
+  font-family: 'Lilita One', sans-serif;
+  font-size: 64px;
+  color: #a41211;
+}
+
+.logo img {
+  width: 100px;
+  vertical-align: -30px;
+  margin-right: 10px;
+}
+
 .github {
   position: absolute;
   top: 20px;
