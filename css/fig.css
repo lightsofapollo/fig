@@ -50,6 +50,14 @@ pre code {
   }
 }
 
+@media (min-width: 481px) {
+  .top-notice {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .content h1 {
   display: none;
 }
@@ -68,9 +76,8 @@ pre code {
 }
 
 .github {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 .github a {
