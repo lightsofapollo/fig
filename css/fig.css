@@ -1,10 +1,41 @@
 body {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #25594D;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
 }
 
 pre, code {
   border: none;
+  background: #D5E1B4;
+}
+
+code, pre code {
+  color: #484F40;
+}
+
+pre {
+  border-bottom: 2px solid #bec9a1;
+}
+
+code {
+  font-size: 0.84em;
+}
+
+pre code {
+  background: none;
 }
 
 /* Customize container */
@@ -12,4 +43,19 @@ pre, code {
   .container {
     max-width: 730px;
   }
+}
+
+.github {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.github a {
+  background: #25594D;
+  padding: 6px 12px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 4px;
 }
