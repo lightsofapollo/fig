@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fig
+title: Fig | Punctual, lightweight development environments using Docker
 ---
 
 Fig
