@@ -21,6 +21,11 @@ p {
   margin: 20px 0;
 }
 
+a, a:hover, a:visited {
+  color: #4D9900;
+  text-decoration: underline;
+}
+
 pre, code {
   border: none;
   background: #D5E1B4;
