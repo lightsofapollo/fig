@@ -70,14 +70,15 @@ pre code {
 .logo {
   text-align: center;
   font-family: 'Lilita One', sans-serif;
-  font-size: 64px;
+  font-size: 96px;
   color: #a41211;
+  margin: 40px 0;
 }
 
 .logo img {
-  width: 100px;
-  vertical-align: -30px;
-  margin-right: 10px;
+  width: 150px;
+  vertical-align: -40px;
+  margin-right: 20px;
 }
 
 .github {
