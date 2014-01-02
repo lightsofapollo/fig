@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Fig | Punctual, lightweight development environments using Docker
+title: Fig | Punctual, isolated development environments using Docker
 ---
 
 Fig
 ====
 
-Punctual, lightweight development environments using Docker.
+Punctual, isolated development environments using Docker.
 
 Fig is a tool for defining and running isolated application environments. You define the services which comprise your app in a simple, version-controllable YAML configuration file that looks like this:
 
