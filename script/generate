@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "---
 layout: default
 title: Fig | Punctual, lightweight development environments using Docker
