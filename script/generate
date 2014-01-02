@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "---
 layout: default
-title: Fig | Punctual, isolated development environments using Docker
+title: Fig | Punctual, lightweight development environments using Docker
 ---
 " > index.md
 
