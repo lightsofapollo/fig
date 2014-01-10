@@ -23,13 +23,7 @@ db:
 
 Then type `fig up`, and Fig will start and run your entire app:
 
-    $ fig up
-    Pulling image orchardup/postgresql...
-    Building web...
-    Starting example_db_1...
-    Starting example_web_1...
-    example_db_1 | 2014-01-02 14:47:18 UTC LOG:  database system is ready to accept connections
-    example_web_1 |  * Running on http://0.0.0.0:5000/
+![example fig run](https://orchardup.com/static/images/fig-example.5807d0d2dbe6.gif)
 
 There are commands to:
 
@@ -203,47 +197,52 @@ environment:
 
 Most commands are run against one or more services. If the service is omitted, it will apply to all services.
 
-#### `build [SERVICE...]`
+Run `fig [COMMAND] --help` for full usage.
+
+#### build
 
 Build or rebuild services.
 
-Services are built once and then tagged as `project\_service`. If you change a service's `Dockerfile` or its configuration in `fig.yml`, you will probably need to run `fig build` to rebuild it.
+Services are built once and then tagged as `project_service`. If you change a service's `Dockerfile` or its configuration in `fig.yml`, you will probably need to run `fig build` to rebuild it, then run `fig rm` to make `fig up` recreate your containers.
 
-#### `kill [SERVICE...]`
+#### kill
 
 Force stop service containers.
 
-#### `logs [SERVICE...]`
+#### logs
 
 View output from services.
 
-#### `ps`
+#### ps
 
 List running containers.
 
-#### `rm [SERVICE...]`
+#### rm
 
 Remove stopped service containers.
 
 
-#### `run SERVICE COMMAND [ARGS...]`
+#### run
 
-Run a one-off command for a service.
+Run a one-off command for a service. E.g.:
+
+    $ fig run web python manage.py shell
 
 Note that this will not start any services that the command's service links to. So if, for example, your one-off command talks to your database, you will need to run `fig up -d db` first.
 
-#### `start [SERVICE...]`
+#### start
 
 Start existing containers for a service.
 
-#### `stop [SERVICE...]`
+#### stop
 
 Stop running containers without removing them. They can be started again with `fig start`.
 
-#### `up [SERVICE...]`
+#### up
 
-Build, create, start and attach to containers for a service.
+Build, create, start and attach to containers for a service. 
 
+If there are stopped containers for a service, `fig up` will start those again instead of creating new containers. When it exits, the containers it started will be stopped. This means if you want to recreate containers, you will need to explicitly run `fig rm`.
 
 ### Environment variables
 
