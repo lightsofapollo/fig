@@ -74,15 +74,26 @@ img {
 .logo {
   text-align: center;
   font-family: 'Lilita One', sans-serif;
-  font-size: 96px;
+  font-size: 80px;
   color: #a41211;
-  margin: 40px 0;
+  margin: 20px 0 40px 0;
 }
 
 .logo img {
-  width: 150px;
-  vertical-align: -40px;
-  margin-right: 20px;
+  width: 100px;
+  vertical-align: -17px;
+}
+
+@media (min-width: 481px) {
+  .logo {
+    font-size: 96px;
+    margin-top: 40px;
+  }
+  .logo img {
+    vertical-align: -40px;
+    width: 150px;
+    margin-right: 20px;
+  }
 }
 
 .github-top,
